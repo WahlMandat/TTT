@@ -11,7 +11,7 @@ import at.tobias.ttt.main.Main;
 public class InstantStartCommand implements CommandExecutor{
 private static final int START_SECONDS = 0;
 	
-	private Main plugin;
+	private final Main plugin;
 	
 	public InstantStartCommand(Main plugin) {
 		this.plugin = plugin;
