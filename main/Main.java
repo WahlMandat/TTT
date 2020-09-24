@@ -31,7 +31,7 @@ public class Main extends JavaPlugin{
 	@Override
 	public void onEnable() {
 		gameStateManager = new GameStateManager(this);
-		players = new ArrayList<Player>();
+		players = new ArrayList<>();
 		
 		gameStateManager.setGameState(GameState.LOBBY_STATE);
 		
@@ -51,7 +51,7 @@ public class Main extends JavaPlugin{
 		pluginManager.registerEvents(new VotingListener(this), this);
 	}
 	private void initVoting() {
-		maps = new ArrayList<Map>();
+		maps = new ArrayList<>();
 		for(String current : getConfig().getConfigurationSection("Arenas").getKeys(false)) {
 			Map map = new Map(this,current);
 			if(map.playable()) 
