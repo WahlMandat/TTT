@@ -4,8 +4,8 @@ import at.tobias.ttt.main.Main;
 
 public class GameStateManager {
 
-	private Main plugin;
-	private GameState[] gameStates;
+	private final Main plugin;
+	private final GameState[] gameStates;
 	private GameState currentGameState;
 	
 	public GameStateManager(Main plugin) {
